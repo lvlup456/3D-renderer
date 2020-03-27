@@ -28,7 +28,7 @@ class Light : public Object{
     Light(glm::vec3 pose,const char* objPath,const char* FragmentShaderPath,const char* VertexShaderPath): 
         Object(objPath,FragmentShaderPath,VertexShaderPath), 
         lightPose(pose){
-    	    Object::translate(glm::vec3(3));
+    	    Object::translate(lightPose);
         }
    
 
